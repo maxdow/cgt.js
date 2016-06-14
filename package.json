@@ -1,0 +1,12 @@
+{
+  "name": "cgt.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo Pas besoin on casse tout !!\n\n\n\n"
+  },
+  "keywords": ["syndicat","blocage","lol"],
+  "author": "Maxime Warnier",
+  "license": "Contestataire"
+}
