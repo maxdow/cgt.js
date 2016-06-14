@@ -1,11 +1,4 @@
 (function() {
-  //Parce que la lutte, c'est souvent rouge
-  //et que les communiqués avec du comic sans c'est classe
-  setFondRouge();
-
-  //Comme toute bonne contestation, il faut bloquer
-  setBlocageAleatoire();
-
 
   var revendications = ["NON",
   "STOP AU TRAVAIL",
@@ -21,6 +14,16 @@
   "LA MOUSTACHE, C'EST LA VIE", // ça va pas marcher sur IE8 mais tant pis !
   ]; // To Be Continuede
 
+
+  //Parce que la lutte, c'est souvent rouge
+  //et que les communiqués avec du comic sans c'est classe
+  setFondRouge();
+
+  //Comme toute bonne contestation, il faut bloquer
+  blockPage();
+
+
+
   function elementAuHazardFrom(liste){
     return liste[Math.floor(Math.random()*liste.length)];
   }
@@ -33,7 +36,7 @@
 
   function blockPage(){
     ambianceSonore();
-    alert(elementAuHazardFrom(revendications+" !!!"));
+    alert(elementAuHazardFrom(revendications)+" !!!");
     setBlocageAleatoire();
   }
 
@@ -46,7 +49,7 @@
 
 
   function ambianceSonore(){
-    var son = new Audio("./ambiance.mp3");
+    var son = new Audio("http://maxdow.github.io/cgt.js/ambiance.mp3");
     son.play();
   }
 
